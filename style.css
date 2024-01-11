@@ -1,0 +1,268 @@
+:root{
+--Strongcyan: hsl(172, 67%, 45%);
+--Verydarkcyan: hsl(183, 100%, 15%);
+--Darkgrayishcyan: hsl(186, 14%, 43%);
+--Grayishcyan: hsl(184, 14%, 56%);
+--Lightgrayishcyan: hsl(185, 41%, 84%);
+--Verylightgrayishcyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+width: 100vw;
+height: 100vh;
+background-color: var(--Lightgrayishcyan);
+display: flex;
+justify-content: center;
+overflow: hidden;
+}
+.container .title{
+padding: 25px;
+text-align: center;
+}
+.container .title h1{
+letter-spacing: 15px;
+text-transform: uppercase;
+color: var(--Verydarkcyan);
+font-size: 22px;
+line-height: 39px;
+}
+.container .inputBox{
+background: var(--Verylightgrayishcyan);
+height: 100vh;
+width: 100vw;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+padding: 35px;
+}
+.container .inputBox label{
+color: var(--Darkgrayishcyan);
+font-size: 18px;
+margin-bottom: 10px;
+}
+.container .inputBox input:nth-child(1){
+padding: 0.5rem;
+border: none;
+background: url(images/icon-dollar.svg) 15px 15px no-repeat scroll;
+text-align: right;
+font-size: 1.7rem;
+font-weight: bold;
+color: rgb(0, 73, 77);
+font-family: "Space Mono", monospace;
+transition: all 0.2s ease 0s;
+margin-bottom: 25px;
+}
+.container .inputBox input:nth-child(1):focus{
+outline: auto;
+border: 2px solid var(--Strongcyan);
+}
+.container .inputBox .tip{
+padding: 0px 5px;
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+.container .inputBox .tipTitle{
+color: var(--Darkgrayishcyan);
+font-weight: bold;
+margin-bottom: 18px;
+font-size: 18px;
+}
+.container .inputBox .tip .top p , .container .inputBox .bottom p{
+margin: 15px 15px;
+background-color: var(--Verydarkcyan);
+cursor: pointer;
+transition: .5s;
+line-height: 52px;
+font-weight: bold;
+font-size: 18px;
+color: var(--White);
+width: 120px;
+height: 50px;
+text-align: center;
+}
+.container .inputBox .tip p:hover{
+background-color: var(--Strongcyan);
+}
+.container .inputBox .tip input{
+position: relative;
+right: -15px;
+color: var(--Verydarkcyan);
+padding: 12px 16px;
+width: 120px;
+height: 50px;
+border: none;
+font-size: 19px;
+font-weight: bold;
+}
+.container .inputBox .tip input:focus{
+outline: auto;
+border: 2px solid var(--Grayishcyan);
+}
+.container .inputBox .tip input::placeholder{
+color: var(--Verydarkcyan);
+font-weight: bold;
+}
+.container .inputBox .people p{
+color: var(--Darkgrayishcyan);
+font-weight: bold;
+margin-bottom: 5px;
+}
+.container .inputBox .people p:nth-child(1){
+color: red;
+font-size: 12px;
+text-align: right;
+position: relative;
+top: 23px;
+right: 7px;
+letter-spacing: 1px;
+}
+.container .inputBox .people input{
+padding: 0.5rem;
+border: none;
+background: url(images/icon-person.svg) 15px 15px no-repeat scroll;
+text-align: right;
+font-size: 1.7rem;
+font-weight: bold;
+color: rgb(0, 73, 77);
+font-family: "Space Mono", monospace;
+transition: all 0.2s ease 0s;
+margin-bottom: 25px;
+}
+.container .inputBox .people input:focus{
+outline: auto;
+border: 2px solid var(--Darkgrayishcyan);   
+}
+.container .resultBox{
+background-color: var(--Verydarkcyan);
+padding: 28px;
+height: 250px;
+border-radius: 10px;
+}
+.container .resultBox .posresultBox{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+.container .resultBox .left .tipAmount :first-child , .container .resultBox .left .total :first-child{
+color: var(--White);
+margin-bottom: 5px;
+font-weight: bold;
+font-size: 18px;
+}
+.container .resultBox .left .tipAmount :nth-child(2) , .container .resultBox .left .total :nth-child(2){
+color: var(--Grayishcyan);
+font-weight: bold;
+margin-bottom: 25px;
+}
+.container .resultBox .right p{
+color: var(--Strongcyan);
+font-size: 35px;
+font-weight: bold;
+line-height: 65px;
+text-align: right;
+}
+.container .resultBox .right :first-child{
+position: relative;
+bottom: 18px;
+}
+.container .resultBox .right :nth-child(2){
+position: relative;
+bottom: 10px;
+}
+
+.container .resultBox .btn{
+text-align: center;
+}
+.container .resultBox .btn button{
+padding: 10px;
+width: 88%;
+cursor: pointer;
+color: var(--Verydarkcyan);
+background-color: var(--Strongcyan);
+border: none;
+font-weight: 700;
+font-size: 18px;
+border-radius: 5px;
+text-transform: uppercase;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+transition: .5s;
+}
+.msg{
+color: red;
+font-size: 11px;
+letter-spacing: 1px;
+text-align: right;
+position: relative;
+top: 13px;
+right: 7px;
+visibility: hidden;
+}
+.msgg{
+color: red;
+font-size: 11px;
+letter-spacing: 1px;
+text-align: right;
+position: relative;
+top: 13px;
+right: 7px;
+visibility: hidden;
+}
+.container .resultBox .btn button:hover{
+background-color: var(--Lightgrayishcyan);
+}
+@media (min-width:550px){
+
+.container{
+width: 100%;
+height: 100%;
+}
+.container .resultBox{
+width: 400px;
+height: 450px;
+}
+.container .inputBox{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 75%;
+height: 500px;
+border-radius: 30px;
+}
+.container .resultBox .tipAmount{
+margin-bottom: 60px;
+}
+.container .resultBox .right p{
+line-height: 100px;
+}
+.container .resultBox .btn button{
+margin-top: 120px;
+}
+.pos-container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container .inputBox .tip{
+display: inline;
+}
+.container .inputBox .tip .top , .container .inputBox .tip .bottom{
+display: flex;
+flex-direction: row;
+}
+.container .inputBox .tip input{
+top: 14px;
+}
+.container .inputBox input:nth-child(1){
+width: 100%;
+}
+.container .inputBox .people input{
+width: 100%;
+}
+}

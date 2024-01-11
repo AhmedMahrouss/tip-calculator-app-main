@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<title>Frontend Mentor | Tip calculator app</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Start Container -->
+<div class="container">
+  <!-- Title -->
+<div class="title"><h1>Spli <br> TTer</h1></div>
+<div class="pos-container">
+  <!-- Start Input Box -->
+<div class="inputBox">
+ <div class="left-pos-container">
+  <p class="msg">Can't Be Zero</p>
+  <label for="price">Bill</label>
+  <!--Start price input section -->
+  <div class="priceInput">
+  <input type="number" id="price" placeholder="0">
+  </div>
+  <!-- End Price input section -->
+  <!-- Start tip Section -->
+  <p class="tipTitle">Select Tip %</p>
+  <div class="tip">
+  <div class="top">
+  <p>5%</p>
+  <p>10%</p>
+  <p>15%</p>
+  </div>
+  <div class="bottom">
+  <p>25%</p>
+  <p>50%</p>
+  <input type="number" placeholder="Custom" id="custom">
+  </div>
+  </div>
+  <!-- End Tip Section -->
+  <!-- Start People input Section -->
+  <div class="people">
+  <p class="msgg">Can't Be Zero</p>
+  <p>Number Of People</p>
+  <input type="text" placeholder="0" id="people">
+  </div>
+  <!-- End People input section -->
+ </div>
+  <div class="right-pos-container">
+    <!-- Start Result Box -->
+  <div class="resultBox">
+    <div class="posresultBox">
+      <!-- Left Section -->
+    <div class="left">
+      <div class="tipAmount">
+      <p>Tip Amount</p>
+      <p>/ person</p>
+      </div>
+      <div class="total">
+      <p>Total</p>
+      <p>/ person</p>
+      </div>
+      </div>
+      <!-- End Left Section -->
+      <!-- Start Right Section -->
+      <div class="right">
+      <p>$0.00</p>
+      <p>$0.00</p>
+      </div>
+    </div>
+    <div class="btn"><button id="reset">Reset</button></div>
+    </div>
+    <!-- End Result Box  -->
+  </div>
+  </div>
+  <!-- End Input Box -->
+</div>
+<!-- End Pos container -->
+</div>
+<!-- End Container -->
+<script src="main.js"></script>
+</body>
+</html>
+
+<!-- 
+    Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+ -->
